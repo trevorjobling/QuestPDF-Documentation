@@ -1,18 +1,18 @@
 # Debug area
 
 - This container can be used to inspect the space taken by its children.
-- The `Debug` container does not alter a document's layout.
+- The `DebugArea` container does not alter a document's layout.
 
 ```csharp
 // You can specify text and color,
 // to better distinguish between various debug elements:
-.Debug("Grid example", Colors.Blue.Medium)
+.DebugArea("Grid example", Colors.Blue.Medium)
 
 // You can skip the color. By default it is red:
-.Debug("Grid example")
+.DebugArea("Grid example")
 
 // Or use default style:
-.Debug()
+.DebugArea()
 ```
 
 Example:
@@ -20,7 +20,7 @@ Example:
 ```csharp{4}
 container
     .Padding(25)
-    .Debug("Grid example", Colors.Blue.Medium)
+    .DebugArea("Grid example", Colors.Blue.Medium)
     .Grid(grid =>
     {
         grid.Columns(3);
